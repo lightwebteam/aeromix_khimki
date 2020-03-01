@@ -1,0 +1,31 @@
+ul {
+    display: flex;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+li:hover {
+    background-color: black;
+    color: white;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+button:active {
+    border: red 1px solid;
+
+}
+
+button:focus {
+    outline: 1px black solid;
+}
