@@ -1,31 +1,424 @@
-ul {
-    display: flex;
-    text-decoration: none;
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 
-li {
-    list-style-type: none;
+.container-fluid {
+    max-width: 89% !important;
+}
+
+.main-wrap .items {
+    height: 490px;
+    /* background-color: pink; */
     padding: 10px;
-    border: 1px solid red;
-    margin: 0 10px;
+}
+
+.main-wrap .items:last-child {
+    margin-right: 0;
+}
+
+nav {
+    z-index: 4000;
+}
+
+.navigation {
+    background-color: none !important;
+    background: none !important;
+    justify-content: space-between;
+    width: 100%;
+    transition: 1s;
+}
+
+nav .nav-item a {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(46, 46, 46) !important;
+    transition: inherit;
+} 
+
+.navbar.active {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    background-color: #000 !important;
+}
+
+.navbar.active > a, .navbar.active .nav-link {
+    color: #fff !important;
+}
+nav .nav-item:hover a {
+    opacity: 1;
+}
+
+header {
+    width: 100%;
+    height: 870px;
+    overflow: hidden;
+}
+
+.parallax-wrap {
+    width: 100%;
+    height: 870px;
+    position: relative;
+    top: -62px;
+}
+
+
+.cover-block {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    z-index: 2000;
+    text-align: center;
+}
+
+.head-menu .nav-item {
+    padding-right: 15px;
+    transition: .3s;
+}
+
+.head-menu .nav-item  a {
+    padding: 0 !important;
+    border-bottom: 2px solid rgba(0,0,0,0);
+}
+.head-menu .nav-item:hover a {
+    border-bottom: 2px solid;
+}
+
+.cover-block-text {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 100px;
+}
+
+.cover-block-text:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5px;
+    left: 104%;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    background-color: #cdff2b;
+}
+
+.collapse-grow {
+        flex-grow: 0;
+}
+
+.bg-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d !important;
+    perspective: 500px !important;
+}
+
+.top-img {
+    position: absolute;
+    transform: translateZ(1);
+    width: 100%;
+    height: 300px;
+    top: -100px;
+    background-position: center 274%;
+    background-image: url(../img/landin-slider-img-11.png);
+    z-index: 500;
+}
+
+.bottom-img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+    background-position: center 3%;
+    background-image: url(../img/landin-slider-img-11.png);
+    z-index: 500;
+    transform: translateZ(1);
+}
+
+.sportgirl {
+    will-change:scroll-position;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/landing1-slider-1.jpg);
+    z-index: 100;
+    transform: translateZ(-500px) scale(2);
+}
+
+
+/* .sportgirl:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    z-index: 200;
+} */
+
+.par-text {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    margin-top: -62px;
+    transform: translateY(-50%) scale(1);
+    z-index: 1000;
+    color: #c8ff0b;
+    overflow: hidden;
+    padding-bottom: 6px;
     transition: .5s;
+    will-change: auto;
+    padding: 10px 0;
 }
 
-li:hover {
-    background-color: black;
-    color: white;
+.par-text:after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background-color: #c8ff0b;
+    transition: .3s;
 }
 
-button {
-    border: none;
-    outline: none;
+.par-text:hover:after {
+    left: 0;
 }
 
-button:active {
-    border: red 1px solid;
+.par-text:hover{
+    transform: translateY(-50%) scale(1.1);
+}
+
+.train-titel {
+    text-align: center;
+    line-height: 70px;
+    padding-top: 10px;
+}
+
+.logo {
+    color: #000 !important;
+    font-weight: normal;
+    font-size: 1.5em;
+    width: 70px;
+    max-width: 70px !important;
+}
+
+.logo span {
+    font-weight: bold;
+}
+
+.train-card {
+    text-align: center;
+    cursor: pointer;
+}
+
+.items:nth-child(1) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/aerobik.jpg);
+    background-position: center;
+}
+.items:nth-child(2) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/strong-2.jpg);
+    background-position: center;
+    background-size: auto 100%;
+}
+.items:nth-child(3) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/ioga.jpg);
+    background-position: left center;
+    background-size: auto 100%;
+}
+.items:nth-child(4) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/pachata-2.jpg);
+    background-position: center center;
+    background-size: 100% auto;
+}
+.items:nth-child(5) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/ofp.jpeg);
+    background-position: right center;
+    background-size: auto 100%;
+}
+.items:nth-child(6) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/djaz-2.jpg);
+    background-position: left center;
+    background-size:cover;
+}
+.items:nth-child(7) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/pilates.jpg);
+    background-position: 30% center;
+    background-size:auto 100%;
+}
+.items:nth-child(8) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/tennis.jpg);
+    background-position: center center;
+    background-size:auto 100%;
+}
+.items:nth-child(9) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/gimnas.jpg);
+    background-position: center center;
+    background-size:auto 100%;
+}
+.items:nth-child(10) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/stretch-3.jpg);
+    background-position: center center;
+    background-size:auto 100%;
+}
+.items:nth-child(11) .train-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/kick.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+.train-card:after {
+    position: absolute;
+    transition: 0.5s;
+    transition-delay: .1s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,.5);
 
 }
 
-button:focus {
-    outline: 1px black solid;
+.train-card > h1 {
+    opacity: .8;
+    font-size: 2em;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
 }
+.train-card:hover h1 {
+    opacity: 1;
+}
+.train-card:hover:after {
+    background-color: #fff;
+    background-color: rgba(0,0,0,1);
+}
+
+.table-tit {
+    line-height: 40px;
+}
+
+.price-title {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color:#000;
+    border-color: #32383e;
+}
+
+.table .tr-row:hover {
+    background-color: #9999;
+}
+
+.timetable-1 td, .timetable-1 th {
+    border-collapse: collapse;
+    border: 1px solid #dee2e6;
+
+}
+
+/* GALLERY */
+.gallery .title {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* CONTACTS */
+
+.contacts_wrap h1 {
+    text-align: left;
+}
+
+.contacts_block {
+    padding: 40px 0 0 0px;
+}
+
+.contacts {
+    padding-top: 100px;
+}
+
+.img_wrap {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: pink;
+    z-index: 4000;
+    overflow: hidden;
+
+}
+
