@@ -20,7 +20,7 @@ $( document ).ready(function() {
         let img = document.createElement('div');
 
         img.setAttribute('class', 'Img-js');
-        $(img).css({'backgroundImage' : `url('${imgAttr[i]}')`})
+        $(img).css({'backgroundImage' : `url("${imgAttr[i]}")`})
         divImg.appendChild(img);  
         modalContent[i].appendChild(divImg);
     }
