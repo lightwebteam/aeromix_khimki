@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/mobile.css') }}" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -15,11 +16,11 @@
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
           <a class="navbar-brand logo" href="#">Aero<span>Mix</span></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
   
-          <div class="collapse navbar-collapse collapse-grow head-menu" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse collapse-grow head-menu menu_burger" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Цены<span class="sr-only">(current)</span></a>
@@ -49,7 +50,7 @@
               <div class="sportgirl"></div>
               <div class="bottom-img"></div>
               <a href="" class="parallax-text">
-                <h2 class="par-text">КУПИТЬ АБОНЕМЕНТ</h2>
+                <h2 class="par-text">купить абонемент</h2>
               </a>
             </div>
             <div class="cover-block">
@@ -63,7 +64,7 @@
       <section>
         <div class="main-wrap">
           <div class="container-fluid">
-            <div class="price-table">
+            <div class="price-table table-responsive">
               <h1 class="price-title">ЦЕНЫ</h1>
               <table class="table">
                 <thead class="thead-dark">
@@ -162,61 +163,83 @@
           <div class="container-fluid">
             <h1 class="train-titel">  ВИДЫ СПОРТА</h1>
             <div class="row">
-              <div class="col-lg-3 col-md-6  items">
-                <div class="train-card">
-                  <h1>Спортивная аэробика</h1>
-                </div>
+              <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+                <a href="">
+                  <div class="train-card">
+                    <h1>Спортивная аэробика</h1>
+                  </div>
+                </a>
               </div>
-              <div class="col-lg-3 col-md-6  items">
-                <div class="train-card">
-                  <h1>Силовая тренировка</h1>
-                </div>
+              <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+                <a href="">
+                  <div class="train-card">
+                    <h1>Силовая тренировка</h1>
+                  </div>
+                </a>
               </div>
-              <div class="col-lg-3 col-md-6  items">
-                <div class="train-card">
-                  <h1>Йога</h1>
-                </div>
+              <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+                <a href="">
+                  <div class="train-card">
+                    <h1>Йога</h1>
+                  </div>
+                </a>
               </div>
-              <div class="col-lg-3 col-md-6  items">
-                <div class="train-card">
-                  <h1>Пачата</h1>
-                </div>
+              <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+                <a href="">
+                  <div class="train-card">
+                    <h1>Пачата</h1>
+                  </div>
+                </a>
               </div>
-              <div class="col-lg-3 col-md-6  items">
-                <div class="train-card">
-                  <h1>О.Ф.П.</h1>
-                </div>
+              <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+                <a href="">
+                  <div class="train-card">
+                    <h1>О.Ф.П.</h1>
+                  </div>
+                </a>
               </div>
-              <div class="col-lg-3 col-md-6  items">
-                <div class="train-card">
-                  <h1>Джаз-фанк</h1>
-                </div>
+              <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+                <a href="">
+                  <div class="train-card">
+                    <h1>Джаз-фанк</h1>
+                  </div>
+                </a>
               </div>
 
-              <div class="col-lg-3 col-md-6  items">
+              <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+                <a href="">
+                  <div class="train-card">
+                    <h1>Пилатес</h1>
+                  </div>
+                </a>
+              </div>
+            <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+              <a href="">
                 <div class="train-card">
-                  <h1>Пилатес</h1>
+                  <h1>Настольный теннис</h1>
                 </div>
-              </div>
-            <div class="col-lg-3 col-md-6  items">
-              <div class="train-card">
-                <h1>Настольный теннис</h1>
-              </div>
+              </a>
             </div>
-            <div class="col-lg-3 col-md-6  items">
-              <div class="train-card">
-                <h1>Развивающая гимнастика</h1>
-              </div>
+            <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+              <a href="">
+                <div class="train-card">
+                  <h1>Развивающая гимнастика</h1>
+                </div>
+              </a>
             </div>
-            <div class="col-lg-3 col-md-6  items">
-              <div class="train-card">
-                <h1>Стретчинг</h1>
-              </div>
+            <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+              <a href="">
+                <div class="train-card">
+                  <h1>Стретчинг</h1>
+                </div>
+              </a>
             </div>
-            <div class="col-lg-3 col-md-6  items">
-              <div class="train-card">
-                <h1>Тай Бо</h1>
-              </div>
+            <div class="col-sm-11 col-lg-4 col-xl-3 col-md-6  items">
+              <a href="">
+                <div class="train-card">
+                  <h1>Тай Бо</h1>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -735,6 +758,7 @@
           </div>
         </div>
       </section>
+      
 
 
       <!--  КОМАНДА    -->
@@ -744,84 +768,164 @@
             <h1 class="title">ГАЛЛЕРЕЯ</h1>
             <div class="row">
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-2919749b0d87753ac77eaf22b296a677-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-2919749b0d87753ac77eaf22b296a677-V.jpg" class="zoom img-fluid " alt="">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-703aecfd3ad9e19d204255afecdca76f-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-703aecfd3ad9e19d204255afecdca76f-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-27ce4d55287b28bbd0440693d7c4b031-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-27ce4d55287b28bbd0440693d7c4b031-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-40154ef9727e2ca19ba2b6be8af1b531-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-40154ef9727e2ca19ba2b6be8af1b531-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-62cc6e196e2c23caae3e10fa4eb1aeba-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-62cc6e196e2c23caae3e10fa4eb1aeba-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-85dee105d0c8686a0b3ab48c024c44d3-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-85dee105d0c8686a0b3ab48c024c44d3-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-18d18b97ac1049f7cd36e088813d0b0a-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-18d18b97ac1049f7cd36e088813d0b0a-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/11.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/11.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-cdf462319cca61aba395cb9498859941-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-cdf462319cca61aba395cb9498859941-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-db0c84e07cc0aab4259e23fef0b8329f-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-db0c84e07cc0aab4259e23fef0b8329f-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-ad2c7dafbb2a3620eb4248113ca24bff-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-ad2c7dafbb2a3620eb4248113ca24bff-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-9c8baf4f232d459346d45f5bdf12cb65-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-9c8baf4f232d459346d45f5bdf12cb65-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-878d118cb2c3df88dd216310c32c66ad-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-878d118cb2c3df88dd216310c32c66ad-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-8464ff2c2447604ec2b0f462ef551187-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-8464ff2c2447604ec2b0f462ef551187-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-003c7cb3a83d6314f0f1c4b670cdb77d-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-003c7cb3a83d6314f0f1c4b670cdb77d-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
               <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="../static/img/gal/IMG-1a4f217fab030dab70e9b9d532309fe8-V.jpg" class="fancybox" rel="ligthbox">
+                <a href="" class="fancybox" rel="ligthbox" data-toggle="modal" data-target="#exampleModal" data-toggle="modal" data-target="#exampleModal">
                     <img src="../static/img/gal/IMG-1a4f217fab030dab70e9b9d532309fe8-V.jpg" class="zoom img-fluid " alt="">
+                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        
+                      </div>
+                    </div>
                 </a>
               </div>
 
@@ -834,7 +938,7 @@
       <!--    КОНТАКТЫ     -->
       <section>
         <div class="container-fluid contacts">
-          <div class="row">
+          <div class="row mobile-cont_wrap">
             <div class="col-4">
               <div class="contacts_wrap">
                 <h1>КОНТАКТЫ</h1>

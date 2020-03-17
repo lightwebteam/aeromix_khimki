@@ -1,0 +1,212 @@
+@media screen and (max-width: 1688px) {
+    .sportgirl {
+        background-position: 14% center;
+    }
+    .main-wrap .items {
+        max-height: 406px;
+    }
+  } 
+
+  @media screen and (max-width: 1524px) {
+    .main-wrap .items {
+        max-height: 300px;
+    }
+  }
+  @media screen and (max-width: 1260px) {
+    .main-wrap .items {
+        max-height: 280px;
+    }
+    .train-card h1 {
+        font-size: 1.8em;
+    }
+  }
+
+  @media screen and (max-width:   1030px) {
+    .mobile-cont_wrap {
+        display: block !important;
+        
+    }
+    .mobile-cont_wrap .col-4,
+    .mobile-cont_wrap .col {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+    .contacts_wrap h1,
+    .contacts_wrap h3,
+    .contacts_wrap span{
+        font-size: 2em;
+    }
+    .map {
+        height: 500px !important;
+    }
+  }
+  
+ 
+  @media screen and (max-width:   991px) {
+      header {
+          height: 100vh !important;
+          max-height: 100vh !important;
+      }
+      .sportgirl{
+        margin-top: 62px;
+        background-position: 15%;
+    }
+    .parallax-wrap {
+        height: 100%;
+    }
+    .head-menu .nav-item a {
+        border: none !important;
+        outline: none !important;
+    }
+    .par-text:after {
+        display: none;
+    }
+    .par-text {
+        left: 50%;
+        transform: translate(-50%,-50%) scale(1);
+        border: 4px solid;
+    }
+    .par-text:hover {
+        transform: translate(-50%,-50%) scale(1.1);
+    }
+    
+    .menu_burger {
+        position: absolute;
+        top: 62px;
+        padding: 20px;
+    }
+    .navigation {
+        background-color: #000 !important;
+    }
+    .navbar-brand, .navbar-toggler  {
+        color: #fff !important;
+    }
+    .navbar-toggler {
+      background-color: #fff;
+    }
+    .par-text {
+        display: inline !important;
+        font-size: 2em;
+        text-align: center;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    .par-text:hover {
+        color: red;
+    }
+    .par-text:hover .par-text:before {
+        transform: none;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #c8ff0b;
+        color: #fff;
+    }
+    .nav-link {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #fff!important;
+        transition: inherit;
+        margin-left: 20px;
+        padding: 7px 0 ;
+    } 
+    .menu_burger {
+        position: absolute;
+        top: 62px;
+        left: 0;
+        background-color: #000;
+        width: 100% !important;
+    }
+    .menu_burger:active {
+        border-bottom: none !important;
+    }
+    .Img-js {
+        height: 50%;
+    }
+   
+  }
+
+ 
+  @media screen and (max-width: 375px) {
+      header {
+          height: 667px;
+      }
+    .parallax-wrap {
+        width: 100%;
+        height:605px;
+        position: relative;
+        top: -62px;
+    }
+    .sportgirl{
+        margin-top: 62px;
+        background-position: 15%;
+    }
+    .navigation {
+        background-color: #000 !important;
+    }
+    .navbar-brand, .navbar-toggler  {
+        color: #fff !important;
+    }
+    .navbar-toggler {
+      background-color: #fff;
+    }
+    .par-text {
+        display: inline !important;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    .par-text:hover {
+        color: red;
+    }
+    .par-text:hover .par-text:before {
+        transform: none;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #c8ff0b;
+        color: #fff;
+    }
+    .nav-link {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #fff!important;
+        transition: inherit;
+        margin-left: 20px;
+        padding: 7px 0 ;
+    } 
+    .menu_burger {
+        position: absolute;
+        top: 62px;
+        left: 0;
+        background-color: #000;
+        width: 100% !important;
+    }
+
+    .cover-block {
+        margin-bottom: -62px;
+    }
+
+    .Img-js {
+        max-height: 225px;
+        height: 36%;
+    }
+    
+  }
+
+
+
+
+
