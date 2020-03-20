@@ -50,8 +50,9 @@ $( document ).ready(function() {
             $(document).on('touchmove',function(e){
                 e.preventDefault();
             });
-        } else if (target.classList.contains('show')) {
-            return true;
-        }
+        } 
+        // else if (target.classList.contains('show')) {
+        //     return true;
+        // }
     });
 });
