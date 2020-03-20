@@ -54,19 +54,7 @@ $( document ).ready(function() {
     //         })
     //     }
     // });
-    $(document).click(function () {
-        let target = event.target;
-        if (target.classList.contains('img-fluid')) {
-            $('.wrap').css({
-                'overflow' : 'hidden'
-            })
-            
-        } else if (target.classList.contains('modal')) {
-            $('.wrap').css({
-                'overflow' : 'scroll'
-            })
-        }
-    });
+    
 
     $('.menu_burger').click(function () {
         let aria = $('.navbar-toggler').attr( "aria-expanded" );
