@@ -29,7 +29,6 @@ $( document ).ready(function() {
     $(window).on( "scroll", function () {
         scroll = $(window).scrollTop();
         let kef = scroll * 0.4;
-        console.log(scroll)
         $('.sportgirl').css({'transform' : 'translateZ(-500px) translate(0%,' + kef + 'px) scale(2)'})
 
         // NAVBAR
@@ -41,17 +40,34 @@ $( document ).ready(function() {
     });
 
     // staic page
+    // $(document).click(function () {
+    //     let target = event.target; 
+    //     if (target.classList.contains('img-fluid')) {
+    //         $('body').css({
+    //             'overflow' : 'hidden',
+    //             'height' : '100vh'
+    //         })
+    //     } else if (target.classList.contains('modal')) {
+    //         $('body').css({
+    //             'overflow' : 'scroll',
+    //             'height' : 'auto'
+    //         })
+    //     }
+    // });
     $(document).click(function () {
-        let target = event.target; 
+        let target = event.target;
         if (target.classList.contains('img-fluid')) {
             $('body').css({
-                'overflow' : 'hidden',
-                'height' : '100vh'
+                'position' : 'fixed',
+                'top' : '-' + scroll + 'px'
             })
         } else if (target.classList.contains('modal')) {
+            scroll =  document.body.style.top
+            console.log(scroll)
             $('body').css({
-                'overflow' : 'scroll',
-                'height' : 'auto'
+                'position' : 'relative',
+                'height' : '100%',
+                'top' : '0'
             })
         }
     });
