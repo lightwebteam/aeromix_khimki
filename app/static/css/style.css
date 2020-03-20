@@ -75,6 +75,10 @@ header {
     top: -62px;
 }
 
+.fixed {
+    position: fixed;
+}
+
 
 .cover-block {
     width: 100%;
