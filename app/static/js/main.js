@@ -57,17 +57,13 @@ $( document ).ready(function() {
     $(document).click(function () {
         let target = event.target;
         if (target.classList.contains('img-fluid')) {
-            $('body').css({
-                'position' : 'fixed',
-                'top' : '-' + scroll + 'px'
+            $('.wrap').css({
+                'overflow' : 'hidden'
             })
+            
         } else if (target.classList.contains('modal')) {
-            scroll =  document.body.style.top
-            console.log(scroll)
-            $('body').css({
-                'position' : 'relative',
-                'height' : '100%',
-                'top' : '0'
+            $('.wrap').css({
+                'overflow' : 'scroll'
             })
         }
     });
