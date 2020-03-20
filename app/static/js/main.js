@@ -6,6 +6,8 @@ $( document ).ready(function() {
     let imgAttr=[];
     let modalContent = document.querySelectorAll('.modal-dialog');
     let cliHeight = document.documentElement.clientHeight;
+    let scroll;
+    // let xxx = window.scrollTop();
 
     
     //  GALLERY
@@ -25,9 +27,9 @@ $( document ).ready(function() {
 
     //       PARALLAX EFFECT
     $(window).on( "scroll", function () {
-        let scroll = $(window).scrollTop();
+        scroll = $(window).scrollTop();
         let kef = scroll * 0.4;
-
+        console.log(scroll)
         $('.sportgirl').css({'transform' : 'translateZ(-500px) translate(0%,' + kef + 'px) scale(2)'})
 
         // NAVBAR
@@ -38,26 +40,23 @@ $( document ).ready(function() {
         }
     });
 
+    // staic page
+    $(document).click(function () {
+        let target = event.target; 
+        if (target.classList.contains('img-fluid')) {
+            $('body').css({
+                'overflow' : 'hidden'
+            })
+        } else if (target.classList.contains('modal')) {
+            $('body').css({
+                'overflow' : 'scroll'
+            })
+        }
+    });
+
     $('.menu_burger').click(function () {
         let aria = $('.navbar-toggler').attr( "aria-expanded" );
         aria = !aria;
         $('.menu_burger').removeClass("show");
-    })
-
-    // $(document).click(function () {
-    //     let target = event.target; 
-    //     if (target.classList.contains('img-fluid')) {
-            
-    //         window.onscroll = function(){
-    //             return false;
-    //         }
-    //         console.log(1); 
-    //     }
-    // })
-    $(document).on('touchmove',function(e){
-        e.preventDefault();
-    }, false);
-
-    // if ($('.menu_burger').classList.contains(show))
-   
+    });
 });
