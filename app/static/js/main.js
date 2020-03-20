@@ -43,4 +43,11 @@ $( document ).ready(function() {
         aria = !aria;
         $('.menu_burger').removeClass("show");
     })
+
+    // $('#galereya').click(function () {
+    //     let target = event.target; 
+    //     if (target.classList.contains('img-fluid')) {
+    //     } else if (target.classList.contains('show')) 
+    //     }
+    // })
 });

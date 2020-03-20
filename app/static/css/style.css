@@ -478,6 +478,10 @@ header {
             transform: translate(-50%,-50%);
 }
 
+.modal {
+    overflow: hidden !important;
+}
+
 .thumb {
     margin-bottom: 30px;
 }
