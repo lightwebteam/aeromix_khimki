@@ -474,3 +474,6 @@ header {
     margin-bottom: 30px;
 }
 
+.navbar-toggler {
+    padding: 6px 5px;
+}
