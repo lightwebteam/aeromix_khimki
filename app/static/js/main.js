@@ -44,20 +44,13 @@ $( document ).ready(function() {
         $('.menu_burger').removeClass("show");
     })
 
-    $('#galereya').click(function () {
-        let target = event.target; 
-        if (target.classList.contains('img-fluid')) {
-            $(document).on('touchmove',function(e){
-                e.preventDefault();
+    let target = event.target; 
+    if (target.classList.contains('img-fluid')) {
+        $(document).on('touchmove',function(e){
+            e.preventDefault();
             window.onscroll = function(){
                 return false;
             }
-            });
-        } 
-        else if (target.classList.contains('show')) {
-            window.onscroll = function(){
-                return true;
-            }
-        }
-    });
+        }); 
+    }
 });
