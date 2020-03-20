@@ -54,7 +54,24 @@ $( document ).ready(function() {
     //         })
     //     }
     // });
-    
+    $(document).click(function () {
+        let target = event.target;
+        if (target.classList.contains('img-fluid')) {
+            $('.modal').css({
+                'position' : 'fixed',
+                'top' : '0',
+                'left' : '0',
+                'right' : '0',
+                'bottom' : '0'
+            })
+            console.log(scroll)
+        } else if (target.classList.contains('modal')) {
+            scroll =  document.body.style.top
+            $('.modal').css({
+                'position' : 'relative'
+            })
+        }
+    });
 
     $('.menu_burger').click(function () {
         let aria = $('.navbar-toggler').attr( "aria-expanded" );
