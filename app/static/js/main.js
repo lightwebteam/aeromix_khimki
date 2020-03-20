@@ -45,11 +45,13 @@ $( document ).ready(function() {
         let target = event.target; 
         if (target.classList.contains('img-fluid')) {
             $('body').css({
-                'overflow' : 'hidden'
+                'overflow' : 'hidden',
+                'height' : '100vh'
             })
         } else if (target.classList.contains('modal')) {
             $('body').css({
-                'overflow' : 'scroll'
+                'overflow' : 'scroll',
+                'height' : 'auto'
             })
         }
     });
