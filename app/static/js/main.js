@@ -44,13 +44,17 @@ $( document ).ready(function() {
         $('.menu_burger').removeClass("show");
     })
 
-    let target = event.target; 
-    if (target.classList.contains('img-fluid')) {
-        $(document).on('touchmove',function(e){
-            e.preventDefault();
+    $(document).click(function () {
+        let target = event.target; 
+        if (target.classList.contains('img-fluid')) {
+            $(document).on('touchmove',function(e){
+                e.preventDefault();
+            });
             window.onscroll = function(){
                 return false;
             }
-        }); 
-    }
+            console.log(1); 
+        }
+    })
+   
 });
