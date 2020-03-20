@@ -44,17 +44,20 @@ $( document ).ready(function() {
         $('.menu_burger').removeClass("show");
     })
 
-    $(document).click(function () {
-        let target = event.target; 
-        if (target.classList.contains('img-fluid')) {
-            $(document).on('touchmove',function(e){
-                e.preventDefault();
-            });
-            window.onscroll = function(){
-                return false;
-            }
-            console.log(1); 
-        }
-    })
+    // $(document).click(function () {
+    //     let target = event.target; 
+    //     if (target.classList.contains('img-fluid')) {
+            
+    //         window.onscroll = function(){
+    //             return false;
+    //         }
+    //         console.log(1); 
+    //     }
+    // })
+    $(document).on('touchmove',function(e){
+        e.preventDefault();
+    }, false);
+
+    // if ($('.menu_burger').classList.contains(show))
    
 });
