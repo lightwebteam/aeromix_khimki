@@ -979,7 +979,7 @@
     </div>
     {# для примера как подключать js #}
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/bodyScrollLock.min.js') }}"></script>
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/bodyScrollLock.min.js') }}"></script> -->
     <script type="text/javascript" src="{{ url_for('static', filename='js/popper.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
@@ -987,12 +987,18 @@
        // staic page
     $(document).click(function () {
         let target = event.target;
-        let bdy = $('body')
+        // let bdy = $('body')
         if (target.classList.contains('img-fluid')) {
-          bodyScrollLock.disableBodyScroll(bdy);
+          $('body').css({
+            'overflow': 'hidden'
+          })
+          // bodyScrollLock.disableBodyScroll(bdy);
         } else if (target.classList.contains('modal')) {
-          bodyScrollLock.enableBodyScroll(bdy);
-          bodyScrollLock.clearAllBodyScrollLocks(bdy);
+          $('body').css({
+            'overflow': 'scroll'
+          })
+          // bodyScrollLock.enableBodyScroll(bdy);
+          // bodyScrollLock.clearAllBodyScrollLocks(bdy);
         }
     });
     </script>
