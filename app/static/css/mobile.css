@@ -164,9 +164,19 @@
     }
     .parallax-wrap {
         width: 100%;
-        height:605px;
+        height: 100%;
         position: relative;
         top: -62px;
+    }
+    .cover-block {
+        width: 100%;
+        height: 100px;
+        left: 0;
+        background-color: #000;
+        position: absolute;
+        bottom: 62px;
+        z-index: 2000;
+        text-align: center;
     }
     .sportgirl{
         margin-top: 62px;

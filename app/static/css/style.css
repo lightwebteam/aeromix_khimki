@@ -70,7 +70,7 @@ header {
 
 .parallax-wrap {
     width: 100%;
-    height: 870px;
+    height: 100%;
     position: relative;
     top: -62px;
 }
