@@ -47,12 +47,11 @@ $( document ).ready(function() {
     $('#galereya').click(function () {
         let target = event.target; 
         if (target.classList.contains('img-fluid')) {
-            // $(document).on('touchmove',function(e){
-            //     e.preventDefault();
-            // });
-            $(document).bind('touchmove', function(e){e.preventDefault()});
+            $(document).on('touchmove',function(e){
+                e.preventDefault();
+            });
         } else if (target.classList.contains('show')) {
-                $(document).unbind('touchmove');
+            return true;
         }
     });
 });
