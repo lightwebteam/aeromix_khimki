@@ -31,9 +31,9 @@ $( document ).ready(function() {
 
         // NAVBAR
         if ( scroll > cliHeight ) {
-            $('.navbar').addClass( "active" );
+            $('.navigation').addClass( "active" );
         } else {
-            $('.navbar').removeClass("active");
+            $('.navigation').removeClass("active");
         }
     });
     $('.menu_burger').click(function () {

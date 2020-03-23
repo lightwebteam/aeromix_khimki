@@ -79,6 +79,14 @@ header {
     position: fixed;
 }
 
+.nav-page {
+    background-color: #000 !important;
+    width: 100%;
+}
+
+.nav-page .logo, .nav-page .nav-link {
+    color: #fff !important;
+}
 
 .cover-block {
     width: 100%;
@@ -483,4 +491,106 @@ header {
 
 .navbar-toggler {
     padding: 6px 5px;
+}
+
+.aerobika h1 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.img-aerobic-1, .img-aerobic-2, .img-sila-1, .img-sila-2, .img-yoga-1, .img-yoga-2, .img-bachata-1, .img-bachata-2,
+.img-ofp-2, .img-ofp-1, .img-jazfank-1, .img-jazfank-2, .img-pilatas-2, .img-pilatas-1, .img-tenis-1, .img-tenis-2,
+.img-razvgim-2, .img-razvgim-1, .img-stretch-1, .img-stretch-2, .img-taibo-1, .img-taibo-2 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.img-aerobic-1 {
+    background-image: url(../img/aerobika/1.jpg);
+
+}
+
+.img-aerobic-2 {
+    background-image: url(../img/aerobika/2.jpg);
+}
+
+.img-sila-1 {
+    background-image: url(../img/sila/1.jpg);
+}
+
+.img-sila-2 {
+    background-image: url(../img/sila/2.jpg); 
+}
+
+.img-yoga-1 {
+    background-image: url(../img/yoga/1.jpg); 
+}
+
+.img-yoga-2 {
+    background-image: url(../img/yoga/2.jpg); 
+}
+
+.img-bachata-2 {
+    background-image: url(../img/bachata/1.jpg);
+}
+.img-bachata-1 {
+    background-image: url(../img/bachata/2.jpeg);
+}
+
+.img-ofp-2 {
+    background-image: url(../img/ofp/1.jpg);
+}
+
+.img-ofp-1 {
+    background-image: url(../img/ofp/2.jpg);
+}
+
+.img-jazfank-2 {
+    background-image: url(../img/jazfank/1.jpg);
+}
+
+.img-jazfank-1 {
+    background-image: url(../img/jazfank/2.jpg);
+}
+
+.img-pilatas-1 {
+    background-image: url(../img/pilatas/1.jpg);
+}
+
+.img-pilatas-2 {
+    background-image: url(../img/pilatas/2.jpg);
+}
+
+.img-tenis-1 {
+    background-image: url(../img/tenis/1.jpg);
+}
+
+.img-tenis-2 {
+    background-image: url(../img/tenis/2.jpg);
+}
+
+.img-razvgim-1 {
+    background-image: url(../img/razvgim/1.jpg);
+}
+
+.img-razvgim-2 {
+    background-image: url(../img/razvgim/2.jpg);
+}
+
+.img-stretch-1 {
+    background-image: url(../img/stretch/1.jpg);
+}
+
+.img-stretch-2 {
+    background-image: url(../img/stretch/2.jpg);
+}
+
+.img-taibo-1 {
+    background-image: url(../img/taibo/1.jpg);
+}
+.img-taibo-2 {
+    background-image: url(../img/taibo/2.jpg);
 }

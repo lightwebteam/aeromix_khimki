@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="../static/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/mobile.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-page">
+      <a class="navbar-brand logo" href="#">Aero<span>Mix</span></a>
+      <button
+        class="navbar-toggler "
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class style="color: rgba(0, 0, 0, 0.5); font-weight: bold;"
+          >menu</span
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse collapse-grow head-menu menu_burger"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#priceSection"
+              >Цены<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#trainings">
+              Виды спорта<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#board-1">
+              Расписание<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contactUs"
+              >Контакты<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#galereya"
+              >Галлерея <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--  ГАЛЛЕРЕЯ    -->
+    <section id="aerobika">
+      <div class="aerobika">
+        <div class="container-fluid">
+          <h1 class="title">Пилатес</h1>
+          <div class="row">
+            <div class="col-12">
+              <div class="sportcard-wrap">
+                <p>
+                  Пила́тес — система физических упражнений (фитнеса),
+                  разработанная Йозефом Пилатесом в начале XX века для
+                  реабилитации людей после травм. Пилатес представляет собой
+                  серию упражнений в медленном темпе. Как и у других видов
+                  фитнеса или физкультуры, результатом регулярных занятий
+                  пилатесом становятся оздоровление суставов и укрепление мышц,
+                  снятие напряжений и болей в теле, коррекция веса, улучшение
+                  осанки, нормализация сна, улучшение самочувствия. Основа
+                  пилатеса — динамические нагрузки без надрыва и перенапряжений.
+                  Упражнения выполняются в медленном темпе, задействуют глубоко
+                  лежащие мышцы и требуют значительных усилий.
+                </p>
+                <p>Занятия пилатесом:</p>
+                <ul>
+                  <li> увеличивают гибкость тела;</li>
+                  <li>
+                    увеличивают силу за счёт улучшения эффективности движений;
+                  </li>
+                  <li>развивают мышцы кора и тем самым предупреждает травмы;</li>
+                  <li>
+                    помогают восстановить мышцы после травм: предупреждает зарастание повреждённых мышц соединительной тканью;
+                  </li>
+                  <li>безопасны в реабилитационный период после травм;</li>
+                  <li>улучшают кровообращение;</li>
+                  <li>улучшают дыхание;</li>
+                  <li>тренируют осознанность движений, учат лучше чувствовать своё тело;</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-11">
+              <div class="img-pilatas-1"></div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-11">
+              <div class="img-pilatas-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/popper.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+    <script>
+      // staic page
+      $(document).click(function() {
+        let target = event.target;
+        let bdy = $("body");
+        if (target.classList.contains("img-fluid")) {
+          bodyScrollLock.disableBodyScroll(bdy);
+        } else if (target.classList.contains("modal")) {
+          bodyScrollLock.enableBodyScroll(bdy);
+          bodyScrollLock.clearAllBodyScrollLocks(bdy);
+        }
+      });
+    </script>
+  </body>
+</html>

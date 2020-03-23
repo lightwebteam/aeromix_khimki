@@ -159,6 +159,12 @@
 
  
   @media screen and (max-width: 376px) {
+    .img-aerobic-1, .img-aerobic-2, .img-sila-1, .img-sila-2, .img-yoga-1, .img-yoga-2,
+    .img-bachata-2, .img-bachata-1, .img-ofp-2, .img-ofp-1, .img-jazfank-2, .img-jazfank-1,
+    .img-pilatas-2, .img-pilatas-1, .img-tenis-1, .img-tenis-2, .img-razvgim-2, .img-razvgim-1,
+    .img-stretch-2, .img-stretch-1, .img-taibo-2, .img-taibo-1 {
+        height: 300px;
+    }
     .contacts_block h1, .contacts_block span, .contacts_block a {
         font-size: 17px;
     }

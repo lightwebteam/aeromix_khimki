@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="../static/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/mobile.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-page">
+      <a class="navbar-brand logo" href="#">Aero<span>Mix</span></a>
+      <button
+        class="navbar-toggler "
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class style="color: rgba(0, 0, 0, 0.5); font-weight: bold;"
+          >menu</span
+        >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse collapse-grow head-menu menu_burger"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#priceSection"
+              >Цены<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#trainings">
+              Виды спорта<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#board-1">
+              Расписание<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contactUs"
+              >Контакты<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#galereya"
+              >Галлерея <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--  ГАЛЛЕРЕЯ    -->
+    <section id="aerobika">
+      <div class="aerobika">
+        <div class="container-fluid">
+          <h1 class="title">Общая физическая подготовка</h1>
+          <div class="row">
+            <div class="col-12">
+              <div class="sportcard-wrap">
+                <p>
+                  Общая физическая подготовка или коротко ОФП включает
+                  несложные, но эффективные, упражнения на развитие координации,
+                  баланса, силы, гибкости и ловкости. Упражнения доступны для
+                  детей различного телосложения и разного уровня
+                  подготовленности. Основная цель ОФП - укрепление здоровья и
+                  формирование мышечного корсета и правильной осанки. ОФП
+                  положительно влияет на развитие организма в целом, повышает
+                  иммунитет и дарит радость и удовольствие от занятий спортом.
+                </p>
+                <p>
+                  В нашем клубе занятия ОФП в игровой форме проводятся для детей
+                  4-5 лет.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-11">
+              <div class="img-ofp-1"></div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-11">
+              <div class="img-ofp-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="../static/js/jquery.js"></script>
+    <script type="text/javascript" src="../static/js/popper.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+    <script>
+      // staic page
+      $(document).click(function() {
+        let target = event.target;
+        let bdy = $("body");
+        if (target.classList.contains("img-fluid")) {
+          bodyScrollLock.disableBodyScroll(bdy);
+        } else if (target.classList.contains("modal")) {
+          bodyScrollLock.enableBodyScroll(bdy);
+          bodyScrollLock.clearAllBodyScrollLocks(bdy);
+        }
+      });
+    </script>
+  </body>
+</html>
