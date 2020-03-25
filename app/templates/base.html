@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!-- H4RDCORR -->
+<!DOCTYPE html> 
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -7,16 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/fonts.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ url_for('static', filename='css/mobile.css') }}" rel="stylesheet" type="text/css">
 
 </head>
-
+<!-- H4RDCORR -->
 <body>
       
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
-          <a class="navbar-brand logo" href="#">Aero<span>Mix</span></a>
+          <a class="navbar-brand logo" href="http://aeromix-khimki.1gb.ru/">Aero<span>Mix</span></a>
           <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class style="color: rgba(0, 0, 0, 0.5); font-weight: bold;">menu</span>
             <span class="navbar-toggler-icon"></span>
@@ -48,8 +50,8 @@
               <div class="top-img"></div>
               <div class="sportgirl"></div>
               <div class="bottom-img"></div>
-              <a href='#priceSection' class="parallax-text">
-                <h2 class="par-text">купить абонемент</h2>
+              <a href='' class="parallax-text">
+                <h2 class="par-text">инстаграмм</h2>
               </a>
             </div>
             <div class="cover-block">
@@ -969,8 +971,10 @@
           </div>
         </div>
       </section>
-      <footer>
-        
+      <footer id="footer" class="footer">
+        <p class="footer-text">
+          H4RDCORRR© <span>все права защищены</span>
+        </p>
       </footer>
     <div id="wrapper">
         {% block content %}

@@ -1,252 +1,283 @@
-
-
+/* <!-- H4RDCORR --> */
 @media screen and (max-width: 1688px) {
-    .sportgirl {
-        background-position: 14% center;
-    }
-    .main-wrap .items {
-        max-height: 406px;
-    }
-  } 
+  .sportgirl {
+    background-position: 14% center;
+  }
+  .main-wrap .items {
+    max-height: 406px;
+  }
+}
 
-  @media screen and (max-width: 1524px) {
-    .main-wrap .items {
-        max-height: 300px;
-    }
+@media screen and (max-width: 1524px) {
+  .main-wrap .items {
+    max-height: 300px;
   }
-  @media screen and (max-width: 1260px) {
-    .main-wrap .items {
-        max-height: 280px;
-    }
-    .train-card h1 {
-        font-size: 1.8em;
-    }
+}
+@media screen and (max-width: 1260px) {
+  .main-wrap .items {
+    max-height: 280px;
   }
+  .train-card h1 {
+    font-size: 1.8em;
+  }
+}
 
-  @media screen and (max-width:   1030px) {
-    .mobile-cont_wrap {
-        display: block !important;
-        
-    }
-    .mobile-cont_wrap .col-4,
-    .mobile-cont_wrap .col {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-    }
-    .contacts_wrap h1,
-    .contacts_wrap h3,
-    .contacts_wrap span{
-        font-size: 2em;
-    }
-    .map {
-        height: 500px !important;
-    }
+@media screen and (max-width: 1030px) {
+  .mobile-cont_wrap {
+    display: block !important;
   }
-  
- 
-  @media screen and (max-width:   992px) {
-      header {
-          height: 100vh !important;
-          max-height: 100vh !important;
-      }
-    .sportgirl{
-        margin-top: 62px;
-        background-position: 15%;
-    }
-    .contacts_block a {
-        font-size: 2em;
-    }
-    .parallax-wrap {
-        height: 100%;
-    }
-    .head-menu .nav-item a {
-        border: none !important;
-        outline: none !important;
-    }
-    .par-text:after {
-        display: none;
-    }
-    .par-text {
-        left: 50%;
-        -webkit-transform: translate(-50%,-50%) scale(1);
-            -ms-transform: translate(-50%,-50%) scale(1);
-                transform: translate(-50%,-50%) scale(1);
-        border: 4px solid;
-    }
-    .par-text:hover {
-        -webkit-transform: translate(-50%,-50%) scale(1.1);
-            -ms-transform: translate(-50%,-50%) scale(1.1);
-                transform: translate(-50%,-50%) scale(1.1);
-    }
-    
-    .menu_burger {
-        position: absolute;
-        top: 62px;
-        padding: 20px;
-    }
-    .navigation {
-        background-color: #000 !important;
-    }
-    .navbar-brand, .navbar-toggler  {
-        color: #fff !important;
-    }
-    .navbar-toggler {
-      background-color: #fff;
-    }
-    .par-text {
-        display: inline !important;
-        font-size: 2em;
-        text-align: center;
-        padding: 10px 20px;
-        margin: 0;
-    }
+  .mobile-cont_wrap .col-4,
+  .mobile-cont_wrap .col {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  .contacts_wrap h1,
+  .contacts_wrap h3,
+  .contacts_wrap span {
+    font-size: 2em;
+  }
+  .map {
+    height: 500px !important;
+  }
+}
 
-    .par-text:hover {
-        color: red;
-    }
-    .par-text:hover .par-text:before {
-        -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #c8ff0b;
-        color: #fff;
-    }
-    .nav-link {
-        font-size: 1.1em;
-        font-weight: bold;
-        color: #fff!important;
-        -webkit-transition: inherit;
-        -o-transition: inherit;
-        transition: inherit;
-        margin-left: 20px;
-        padding: 7px 0 ;
-    } 
-    .menu_burger {
-        position: absolute;
-        top: 62px;
-        left: 0;
-        background-color: #000;
-        width: 100% !important;
-    }
-    .menu_burger:active {
-        border-bottom: none !important;
-    }
-    .Img-js {
-        height: 50%;
-    }
-   
+@media screen and (max-width: 992px) {
+  header {
+    height: 100vh !important;
+    max-height: 100vh !important;
   }
-  
-  @media screen and (max-width: 625px) {
-    .contacts_block h1, .contacts_block span, .contacts_block a {
-        font-size: 20px;
-    }
-    .container-fluid {
-        max-width: 100%;
-        width: 100% !important;
-        padding: 0;
-        margin: 0 auto;
-    }
+  .footer {
+    text-align: center;
   }
 
- 
-  @media screen and (max-width: 376px) {
-    .img-aerobic-1, .img-aerobic-2, .img-sila-1, .img-sila-2, .img-yoga-1, .img-yoga-2,
-    .img-bachata-2, .img-bachata-1, .img-ofp-2, .img-ofp-1, .img-jazfank-2, .img-jazfank-1,
-    .img-pilatas-2, .img-pilatas-1, .img-tenis-1, .img-tenis-2, .img-razvgim-2, .img-razvgim-1,
-    .img-stretch-2, .img-stretch-1, .img-taibo-2, .img-taibo-1 {
-        height: 300px;
-    }
-    .contacts_block h1, .contacts_block span, .contacts_block a {
-        font-size: 17px;
-    }
-    .parallax-wrap {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        top: -62px;
-    }
-    .cover-block {
-        width: 100%;
-        height: 100px;
-        left: 0;
-        background-color: #000;
-        position: absolute;
-        bottom: 62px;
-        z-index: 2000;
-        text-align: center;
-    }
-    .sportgirl{
-        margin-top: 62px;
-        background-position: 15%;
-    }
-    .navigation {
-        background-color: #000 !important;
-    }
-    .navbar-brand, .navbar-toggler  {
-        color: #fff !important;
-    }
-    .navbar-toggler {
-      background-color: #fff;
-    }
-    .par-text {
-        display: inline !important;
-        font-size: 1.2em;
-        text-align: center;
-        padding: 5px 10px;
-        margin: 0;
-    }
-
-    .par-text:hover {
-        color: red;
-    }
-    .par-text:hover .par-text:before {
-        -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #c8ff0b;
-        color: #fff;
-    }
-    .nav-link {
-        font-size: 1.1em;
-        font-weight: bold;
-        color: #fff!important;
-        -webkit-transition: inherit;
-        -o-transition: inherit;
-        transition: inherit;
-        margin-left: 20px;
-        padding: 7px 0 ;
-    } 
-    .menu_burger {
-        position: absolute;
-        top: 62px;
-        left: 0;
-        background-color: #000;
-        width: 100% !important;
-    }
-
-    .cover-block {
-        margin-bottom: -62px;
-    }
-
-    .Img-js {
-        max-height: 225px;
-        height: 225px;
-    }
-    
+  .logo {
+    font-size: 1.7em;
   }
+  .navbar-toggler {
+    border: none !important;
+    outline: none !important;
+  }
+  .navbar-toggler span {
+    color: #000 !important;
+  }
+  .sportgirl {
+    margin-top: 62px;
+    background-position: 15%;
+  }
+  .contacts_block a {
+    font-size: 2em;
+  }
+  .parallax-wrap {
+    height: 100%;
+  }
+  .nav-item a {
+    font-size: 1.6em !important;
+  }
+  .head-menu .nav-item a {
+    border: none !important;
+    outline: none !important;
+  }
+  .par-text:after {
+    display: none;
+  }
+  .par-text {
+    color: #fff;
+    background-color: rgba(255, 168, 18, 0.7);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 4px solid rgb(255, 168, 18);
+  }
+
+  .par-text:active {
+    transform: none;
+  }
+
+  .menu_burger {
+    position: absolute;
+    top: 62px;
+    padding: 20px;
+  }
+  .navigation {
+    background-color: #000 !important;
+  }
+  .navbar-brand,
+  .navbar-toggler {
+    color: #fff !important;
+  }
+  .navbar-toggler {
+    background-color: #fff;
+  }
+  .par-text {
+    display: inline !important;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0;
+  }
+  .par-text:hover .par-text:before {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffa812;
+    color: #fff;
+  }
+  .nav-link {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff !important;
+    -webkit-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+    margin-left: 20px;
+    padding: 7px 0;
+  }
+  .menu_burger {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    background-color: #000;
+    width: 100% !important;
+  }
+  .menu_burger:active {
+    border-bottom: none !important;
+  }
+  .Img-js {
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .cover-block-text:after {
+    display: none;
+  }
+  .contacts_block h1,
+  .contacts_block span,
+  .contacts_block a {
+    font-size: 20px;
+  }
+  .container-fluid {
+    max-width: 100%;
+    width: 100% !important;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .img-aerobic-1,
+  .img-aerobic-2,
+  .img-sila-1,
+  .img-sila-2,
+  .img-yoga-1,
+  .img-yoga-2,
+  .img-bachata-2,
+  .img-bachata-1,
+  .img-ofp-2,
+  .img-ofp-1,
+  .img-jazfank-2,
+  .img-jazfank-1,
+  .img-pilatas-2,
+  .img-pilatas-1,
+  .img-tenis-1,
+  .img-tenis-2,
+  .img-razvgim-2,
+  .img-razvgim-1,
+  .img-stretch-2,
+  .img-stretch-1,
+  .img-taibo-2,
+  .img-taibo-1 {
+    height: 300px;
+  }
+  .contacts_block h1,
+  .contacts_block span,
+  .contacts_block a {
+    font-size: 17px;
+  }
+  .parallax-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -62px;
+  }
+  .cover-block {
+    width: 100%;
+    height: 100px;
+    left: 0;
+    background-color: #000;
+    position: absolute;
+    bottom: 62px;
+    z-index: 2000;
+    text-align: center;
+  }
+  .sportgirl {
+    margin-top: 62px;
+    background-position: 15%;
+  }
+  .navigation {
+    background-color: #000 !important;
+  }
+  .navbar-brand,
+  .navbar-toggler {
+    color: #fff !important;
+  }
+  .navbar-toggler {
+    background-color: #fff;
+  }
+  .par-text {
+    display: inline !important;
+    font-size: 2em;
+    text-align: center;
+    padding: 14px 10px;
+    margin: 0;
+  }
+  .par-text:hover .par-text:before {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffa812;
+    color: #fff;
+  }
+  .nav-link {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff !important;
+    -webkit-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+    margin-left: 20px;
+    padding: 7px 0;
+  }
+  .menu_burger {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    background-color: #000;
+    width: 100% !important;
+  }
+
+  .cover-block {
+    margin-bottom: -62px;
+  }
+
+  .Img-js {
+    max-height: 225px;
+    height: 225px;
+  }
+}
