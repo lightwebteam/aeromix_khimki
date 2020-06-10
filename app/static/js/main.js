@@ -30,7 +30,7 @@ $( document ).ready(function() {
         $('.sportgirl').css({'transform' : 'translateZ(-500px) translate(0%,' + kef + 'px) scale(2)'})
 
         // NAVBAR
-        if ( scroll > cliHeight ) {
+        if ( scroll >= cliHeight ) {
             $('.navigation').addClass( "active" );
         } else {
             $('.navigation').removeClass("active");
